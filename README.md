@@ -39,7 +39,7 @@ Create a directory named subprojects in the root directory, next create a file n
 
 2. **Integrate Wrap File in Meson Build**:
    ```meson
-   project('my_project', 'c',
+   project('my_project', 'cpp',
        version : '0.1',
        default_options : ['warning_level=3'])
 
