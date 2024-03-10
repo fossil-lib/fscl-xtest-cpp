@@ -10,20 +10,28 @@ Description:
     feel free to contact Michael at michaelbrockus@gmail.com.
 ==============================================================================
 */
-#include <fossil/xtest.h>
+#include <fossil/xtest.hpp>
 
 //
 // XUNIT-GROUP: list of test groups for the runner
 //
-XTEST_EXTERN_POOL(basic_group); 
+XTEST_EXTERN_POOL(xassert_test_group);
+XTEST_EXTERN_POOL(xexpect_test_group);
+XTEST_EXTERN_POOL(xbenchs_test_group);
+XTEST_EXTERN_POOL(bdd_test_group);
+XTEST_EXTERN_POOL(tdd_test_group);
 
 //
-// XUNIT-TEST RUNNER
+// XUNIT-TEST RUNNER:
 //
 int main(int argc, char **argv) {
     XTEST_CREATE(argc, argv);
 
-    XTEST_IMPORT_POOL(basic_group);
+    XTEST_IMPORT_POOL(xassert_test_group);
+    XTEST_IMPORT_POOL(xexpect_test_group);
+    XTEST_IMPORT_POOL(xbenchs_test_group);
+    XTEST_IMPORT_POOL(bdd_test_group);
+    XTEST_IMPORT_POOL(tdd_test_group);
 
     return XTEST_ERASE();
 } // end of func
