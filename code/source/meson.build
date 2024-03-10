@@ -1,4 +1,4 @@
-code = files('module.cpp')
+code = files('xtest.cpp')
 
 lib = static_library('fscl-xtest-cpp',
     code,
