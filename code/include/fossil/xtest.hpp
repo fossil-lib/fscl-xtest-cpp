@@ -13,7 +13,6 @@ Description:
 #ifndef FSCL_XTEST_HPP
 #define FSCL_XTEST_HPP
 
-#define _GNU_SOURCE
 #include <cstdint>
 #include <ctime>
 #if defined(_WIN32)
